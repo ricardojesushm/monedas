@@ -52,7 +52,7 @@ async function getDataHistorica(){
 
 function ConfiguracionGrafica(monedas){
     const tipoDeGrafica = "line";
-    // se usa substr para tomar solo los 11 primeros dígitos de la fecha considerando que el primer dígito está en la ubicación 0
+    // se usa substr para tomar solo los 10 primeros dígitos de la fecha considerando que el primer dígito está en la ubicación 0
     const fechas = monedas.serie.map((moneda)=>moneda.fecha.substr(0,10));
     const titulo = "Últimos 10 Registros";
     const colorDeLinea = "rgb(0, 139, 220)";
