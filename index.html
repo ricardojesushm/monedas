@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moneda</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <i class="bi bi-currency-exchange" id="icono_monedas"></i>
+        <h1>Conversor de monedas nacional</h1>
+        <hr id="separador">
+        <div id="conversor">
+            <h3>Pesos CLP</h3>
+            <input id="ingresar_pesos" type="text">
+            <h3>Moneda a convertir:</h3>
+            <select id="select_moneda">
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+            </select>
+            <button id="btn_buscar"><i class="bi bi-search" id="icono_busqueda"></i>&nbsp;Buscar</button>
+            <h4 id="resultado"></h4>
+        </div>
+    </div>
+    <section id="contenedor_grafica">
+        <div id="grafico_dolares">
+            <h1>Historial Dólares</h1>
+            <div class="grafica">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div id="grafico_euros">
+            <h1>Historial Euros</h1>
+            <div class="grafica">
+                <canvas id="myChartE"></canvas>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
